@@ -1,0 +1,10 @@
+JOINT and histology analysis — WuLab, 2026
+
+Bayes_Joint.m adapts Bayesian sampling code credited to Oscar Jalnefjord
+(2018-08-27); halfSampleMode.m originates from the same implementation.
+Public upstream source, distributed under Apache License 2.0:
+https://github.com/OSIPI/TF2.4_IVIM-MRI_CodeCollection/tree/main/src/original/fitting/OJ_GU
+
+The JOINT adaptation uses the JOINT forward model with parameters fin,
+diameter, Dex, Din and kin, and JOINT-specific prior inputs. Original author
+attribution is retained in the source files.
