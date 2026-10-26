@@ -27,9 +27,9 @@ result = fit_joint_signals(signal, seqParams);
 
 `signal` is an N-voxel × N-measurement matrix. `result.nlls` contains NLLS estimates; `result.parameters` contains posterior means of `fin, diameter, Dex, Din, kin`, in units of dimensionless, µm, µm²/ms, µm²/ms and s⁻¹.
 
-- Acquisition matrix and units: [study_sequence.m](joint/examples/study_sequence.m).
-- Fitting settings and priors: [fit_joint_signals.m](joint/fit_joint_signals.m).
-- NIfTI mapping: set paths using [example_config.m](joint/examples/example_config.m), then call `run_joint_nifti(cfg)`. Input volumes follow the acquisition-matrix order.
+- Acquisition matrix and units: `joint/examples/study_sequence.m`.
+- Fitting settings and priors: `joint/fit_joint_signals.m`.
+- NIfTI mapping: set paths using `joint/examples/example_config.m`, then call `run_joint_nifti(cfg)`. Input volumes follow the acquisition-matrix order.
 
 ## Histology
 
@@ -37,7 +37,7 @@ result = fit_joint_signals(signal, seqParams);
 python histology/postprocess.py --regions histology/examples/regions.csv --output results/histology.csv
 ```
 
-Calculates nuclear area fraction, its 3/2 transformation and optional weighted nuclear diameter. See [input formats and formulas](histology/README.md).
+Calculates nuclear area fraction, its 3/2 transformation and optional weighted nuclear diameter. See `histology/README.md` for input formats and formulas.
 
 ## References
 
